@@ -24,16 +24,51 @@ The plan identifies the items to be tested, the features to be tested, the types
 **1.1.1 Roles assigned to the project and persons allocated**
 
 **1.1.2 Entry criteria defined**
+  - smoke test passed (being the most basic type of test, this is a very important entry criteria in the process of testing)
+  - testing environment is up and running
+
 
 **1.1.3 Exit criteria defined**
+  - 90% of tests are passed
+  - no Critical issues have Open status
+  - update tests are 100% passed (update tests will not generate other new issues that impact the application)
+
 
 **1.1.4 Test scope**
   - **Test in scope:**
+    1.	Create account
+    2.	Account Login
+    3.	Add to cart (product)
+    4.	Complete order
+    5.	Contact
+
   - **Test not in scope:**
+    - Non-functional testing like stress, performance is beyond scope of this project
+    - No QA support for mobile applications developed. Only web applications will be tested
+    - Automation testing is beyond scope
+    - Home Button
+    - Product description
+    - About us Button
+    - Categories
+    - Previous/ Next Buttons
 
 **1.1.5 Risks detected:**
   - Projects risks:
+      - too few people to execute the tests and a short amount of time
+      - no experince with e-commerce pages
+      - working with a third party site for the payments
+      - having just one Browser to test on to
+      - the requirements are not very detailed and clear
+      
   - Product risks:
+      - user data (user accounts, open carts) might be impacted with update tests
+      - security risks for the completion of the order (personal data, card data)
+      - stability risks (crashes, disconnects, etc)
+      - IE, Mozilla, Firefox browsers might have performance issues
+      - the web page pagination could be impacted when opened on mobile devices
+      - stress conditions might impact the web application
+      - new browser might not be supported 
+
 
 **1.1.6 Evaluating entry criteria**
 The entry criterias defined in the Test Planning phase have been achieved and the test process can continue.
