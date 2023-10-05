@@ -11,7 +11,35 @@ Tools used:
 
 **<h1>Functional specifications </h1>**
 
--> enter here the functional specifications created in JIRA
+<h3>For the Sign up section</h3>
+
+-On the sign-up page, I should see input fields for entering my username and password.
+
+- The username field should allow alphanumeric characters and have a minimum and maximum length requirement. Username should only allow the following format: firstname.lastname@domain.com. “FirstName”, “LastName” and “Domain” should contain only alphanumerical characters.
+
+- The password field should have a minimum length requirement and hide the entered characters for security. Password should be between 8 and 16 characters long. It must contain at least one number, one capital letter, one special character. Password should be displayed as encrypted.
+
+- After entering the required information, I should be able to submit the sign-up form.
+
+- If any required field is left empty or contains invalid data, appropriate error messages should be displayed.
+
+- If the entered username or email address is already registered, an error message should indicate that the account already exists.
+
+- Upon successful submission of the sign-up form, I should receive a confirmation message
+  
+
+<h3>For the Contact section</h3>
+
+- As a registered user I should be able to contact the store through the contact form
+
+- As a non-registered user I shouldn’t be able to contact the store through the contact form
+
+- The Contact Email field should allow only the following format: firstnamelastname@domain.com
+
+- The Contact Name field should allow only the following format: First Name Last Name
+
+- The Message box should allow only alphanumerical characters (maximum 1000)
+
 
 **<h1>Testing section </h1>**
 
@@ -23,24 +51,24 @@ The plan identifies the items to be tested, the features to be tested, the types
 
 **1.1.1 Roles assigned to the project and persons allocated**
 
+Carmen Mandra will test: Sign up, Contact 
+
+
 **1.1.2 Entry criteria defined**
   - smoke test passed (being the most basic type of test, this is a very important entry criteria in the process of testing)
   - testing environment is up and running
 
 
 **1.1.3 Exit criteria defined**
-  - 90% of tests are passed
+  - 50% of tests are passed
   - no Critical issues have Open status
-  - update tests are 100% passed (update tests will not generate other new issues that impact the application)
 
 
 **1.1.4 Test scope**
   - **Test in scope:**
-    1.	Create account
-    2.	Account Login
-    3.	Add to cart (product)
-    4.	Complete order
-    5.	Contact
+    1.	Create account by using Sign up
+    2.	Add to cart (product)
+    3.	Contact
 
   - **Test not in scope:**
     - Non-functional testing like stress, performance is beyond scope of this project
@@ -51,14 +79,18 @@ The plan identifies the items to be tested, the features to be tested, the types
     - About us Button
     - Categories
     - Previous/ Next Buttons
+    - Log in
+    - Complete order
 
 **1.1.5 Risks detected:**
   - Projects risks:
-      - too few people to execute the tests and a short amount of time
+      - limited experince for the testing team
+      - few people to execute the tests and a short amount of time
       - no experince with e-commerce pages
       - working with a third party site for the payments
       - having just one Browser to test on to
       - the requirements are not very detailed and clear
+      - limited acces to testing resources
       
   - Product risks:
       - user data (user accounts, open carts) might be impacted with update tests
@@ -67,7 +99,9 @@ The plan identifies the items to be tested, the features to be tested, the types
       - IE, Mozilla, Firefox browsers might have performance issues
       - the web page pagination could be impacted when opened on mobile devices
       - stress conditions might impact the web application
-      - new browser might not be supported 
+      - new browser might not be supported
+      - dependence on revision and update of products
+      - delivery problems
 
 
 **1.1.6 Evaluating entry criteria**
@@ -77,11 +111,38 @@ The entry criterias defined in the Test Planning phase have been achieved and th
 
 It will be done by generating periodic reports that reflect the current status of the test.
 
+The report generated at the end of the sprint:
+[Test execution report]([https://www.example.com/my%20great%20page](https://itfclasses.atlassian.net/projects/CM?selectedItem=com.thed.zephyr.je__test-metric-project-level))
+
 **<h2>1.3 Test Analysis</h2>**
 
-The testing process will be executed based on the above requirements for the ***module under test name***. The following test conditions were found:
+The testing process will be executed based on the above requirements for the ***Sign up***. The following test conditions were found:
 
-  - Enter test conditions here
+   - On the sign-up page, I should see input fields for entering my username and password.
+
+  - The username field should allow alphanumeric characters and have a minimum and maximum length requirement. Username should only allow the following format: firstname.lastname@domain.com. “FirstName”, “LastName” and “Domain” should contain only alphanumerical characters.
+
+  - The password field should have a minimum length requirement and hide the entered characters for security. Password should be between 8 and 16 characters long. It must contain at least one number, one capital letter, one special character. Password should be displayed as encrypted.
+
+  - After entering the required information, I should be able to submit the sign-up form.
+
+  - If any required field is left empty or contains invalid data, appropriate error messages should be displayed.
+
+  - If the entered username or email address is already registered, an error message should indicate that the account already exists.
+
+  - Upon successful submission of the sign-up form, I should receive a confirmation message
+
+The testing process will be executed based on the above requirements for the ***Contact***. The following test conditions were found:
+  - As a registered user I should be able to contact the store through the contact form
+
+  - As a non-registered user I shouldn’t be able to contact the store through the contact form
+
+  - The Contact Email field should allow only the following format: firstnamelastname@domain.com
+
+  - The Contact Name field should allow only the following format: First Name Last Name
+
+  - The Message box should allow only alphanumerical characters (maximum 1000)
+    
 
 **<h2>1.4 Test Design</h2>**
 
