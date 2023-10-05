@@ -13,7 +13,7 @@ Tools used:
 
 <h3>For the Sign up section</h3>
 
--On the sign-up page, I should see input fields for entering my username and password.
+- On the sign-up page, I should see input fields for entering my username and password.
 
 - The username field should allow alphanumeric characters and have a minimum and maximum length requirement. Username should only allow the following format: firstname.lastname@domain.com. “FirstName”, “LastName” and “Domain” should contain only alphanumerical characters.
 
@@ -112,7 +112,8 @@ The entry criterias defined in the Test Planning phase have been achieved and th
 It will be done by generating periodic reports that reflect the current status of the test.
 
 The report generated at the end of the sprint:
-[Test execution report]([https://www.example.com/my%20great%20page](https://itfclasses.atlassian.net/projects/CM?selectedItem=com.thed.zephyr.je__test-metric-project-level))
+
+[Test execution report](https://itfclasses.atlassian.net/projects/CM?selectedItem=com.thed.zephyr.je__test-metric-project-level)
 
 **<h2>1.3 Test Analysis</h2>**
 
