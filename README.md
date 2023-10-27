@@ -7,7 +7,7 @@ API Documentation: link to API documentation if exists or N/A
 
 **The final project will be split into 2 sections: [Testing section]() and [SQL section]()**
 
-Tools used:
+Tools used: Jira and Zephyr Squad
 
 **<h1>Functional specifications </h1>**
 
@@ -45,7 +45,7 @@ Tools used:
 
 **<h2>1.1 Test Planning </h2>**
 
-The Test Plan is designed to describe all details of testing for the X module from the **Demoblaze** application
+The Test Plan is designed to describe all details of testing for the Sign-up and Contact module from the **Demoblaze** application
 
 The plan identifies the items to be tested, the features to be tested, the types of testing to be performed, the personnel responsible for testing, the resources and schedule required to complete testing, and the risks associated with the plan
 
@@ -55,8 +55,10 @@ Carmen Mandra will test: Sign up, Contact
 
 
 **1.1.2 Entry criteria defined**
-  - smoke test passed (being the most basic type of test, this is a very important entry criteria in the process of testing)
-  - testing environment is up and running
+  - access to the testing tools is granted
+  - the testing team has undergone the proper training
+  - the business specifications have been acknowledged
+  - we have a testing environment up and running
 
 
 **1.1.3 Exit criteria defined**
@@ -66,9 +68,8 @@ Carmen Mandra will test: Sign up, Contact
 
 **1.1.4 Test scope**
   - **Test in scope:**
-    1.	Create account by using Sign up
-    2.	Add to cart (product)
-    3.	Contact
+    1.	Create account by using the Sign up module. Testing the possibility of creating an account by using a positive and a negative test, verifying that an existing user cannot create a new account
+    2.	Send a message to the seller by using the Contact form. Testing to see if the Contact form works as it is intended in the business specifications
 
   - **Test not in scope:**
     - Non-functional testing like stress, performance is beyond scope of this project
@@ -87,7 +88,7 @@ Carmen Mandra will test: Sign up, Contact
       - limited experince for the testing team
       - few people to execute the tests and a short amount of time
       - no experince with e-commerce pages
-      - working with a third party site for the payments
+      - working with a third party site for the payments because the payment site cannot be tested, it might have bugs and it might fail thus impacting our end-to-end functionality of the web site
       - having just one Browser to test on to
       - the requirements are not very detailed and clear
       - limited acces to testing resources
@@ -105,7 +106,7 @@ Carmen Mandra will test: Sign up, Contact
 
 
 **1.1.6 Evaluating entry criteria**
-The entry criterias defined in the Test Planning phase have been achieved and the test process can continue.
+The entry criteria defined in the Test Planning phase have been achieved and the test process can continue.
 
 **<h2>1.2 Test Monitoring and Control</h2>**
 
@@ -115,25 +116,28 @@ The report generated at the end of the sprint:
 
 [Test execution report](https://itfclasses.atlassian.net/projects/CM?selectedItem=com.thed.zephyr.je__test-metric-project-level)
 
+![test execution report](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/assets/133394952/89dc7672-430d-44b5-b04a-dafe8ae5ae36)
+
+![test execution by cycle](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/assets/133394952/61e9a306-062c-46d2-8f60-f414c800cff2)
+
 **<h2>1.3 Test Analysis</h2>**
 
 The testing process will be executed based on the above requirements for the ***Sign up***. The following test conditions were found:
 
-   - On the sign-up page, I should see input fields for entering my username and password.
+   - Verify that username field accepts alphanumeric characters. Username should only allow the following format: firstname.lastname@domain.com. “FirstName”, “LastName” and “Domain”.
 
-  - The username field should allow alphanumeric characters and have a minimum and maximum length requirement. Username should only allow the following format: firstname.lastname@domain.com. “FirstName”, “LastName” and “Domain” should contain only alphanumerical characters.
-
-  - The password field should have a minimum length requirement and hide the entered characters for security. Password should be between 8 and 16 characters long. It must contain at least one number, one capital letter, one special character. Password should be displayed as encrypted.
+  - The Password should be between 8 and 16 characters long. It should be encrypted.
 
   - After entering the required information, I should be able to submit the sign-up form.
 
-  - If any required field is left empty or contains invalid data, appropriate error messages should be displayed.
+  - If any required field from the Sign up section (email and password) is left empty or contains invalid data, appropriate error messages should be displayed.
 
-  - If the entered username or email address is already registered, an error message should indicate that the account already exists.
+  - Check that an error message is returned when user tries to register with existing username / email
 
   - Upon successful submission of the sign-up form, I should receive a confirmation message
 
 The testing process will be executed based on the above requirements for the ***Contact***. The following test conditions were found:
+
   - As a registered user I should be able to contact the store through the contact form
 
   - As a non-registered user I shouldn’t be able to contact the store through the contact form
@@ -154,8 +158,9 @@ Test cases:
   - Verify that the user cannot create an account by filling out only the 'Username' input field and an error message is displayed
   - Verify that an error message is displayed when entering an invalid username in the text input
   - Verify that the user cannot create an account by filling out only the 'Password' input field and an error message is displayed
-  - Verify that an error message is displayed when entering an invalid password in the text input
-  - Verify that a registered user cannot create another account using the same email address
+  - Verify that an error message is displayed when entering an invalid password in the text input, a too short one
+  - Verify that an error message is displayed when entering an invalid password in the text input, a too long one
+  - Verify that an error message is returned when the user tries to register with existing username / email
   - Verify that the user cannot create an account by leaving all the input field empty
 
   - Verify that a non-user cannot send a message
@@ -165,21 +170,23 @@ Test cases:
   - Verify that if the user writes more than 1000 words in the message section an error message is displayed
   - Verify that if the user writes any special characters in the ' message' section an error message is displayed
 
-The test cases with steps can be viewed here: [Zephyr Test Steps (Jira).pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/12818494/Zephyr.Test.Steps.Jira.pdf)
+The test cases with steps can be viewed here: [Zephyr Test Steps (Jira).pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188078/Zephyr.Test.Steps.Jira.pdf)
+
 
 **<h2>1.5 Test Implementation</h2>**
 
 The following elements are needed to be ready before the test execution phase begins:
 
   - The website is up and running
-  - All the necesarry examples are ready
+  - All the necesary username, passwords and contact messages examples are ready
   - Acces granted to Jira an Zephyr
     
 **<h2>1.6 Test Execution</h2>**
 
   - Test cases are executed on the created test Cycle summary: [cycle summary.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/12818577/cycle.summary.pdf)
 
-  - Bugs have been created based on the failed tests. The complete bug reports can be found here: [bug report.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/12818610/bug.report.pdf)
+  - Bugs have been created based on the failed tests. The complete bug reports can be found here: [bug report.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188086/bug.report.pdf)
+
       - [Sign up] Sign up succesfully with invalid email
       - [Sign up] Sign up succesfully with invalid password
       - [Send message through the contact link] Send a message by leaving all the fields empty
@@ -193,7 +200,7 @@ The following elements are needed to be ready before the test execution phase be
   - The traceability matrix was generated and can be found here: [traceability matrix.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/12818712/traceability.matrix.pdf)
 
   - Test execution chart was generated, the final report shows the presence of 7 bugs from the total of 13 test that were executed, this means that 53,85% from the total number of test failed so the exit criteria is not passed and the bugs need to be fixed and then retested
-  - The test execution report can be found here: [test execution report.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/12818708/test.execution.report.pdf)
+  - The test execution report can be found here: ![test execution by cycle](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/assets/133394952/b82ccf31-7fa8-489a-b485-16d92f7f721b)
+
 
  
- **<h1>2 SQL section</h2>**
