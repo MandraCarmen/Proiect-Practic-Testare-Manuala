@@ -183,24 +183,38 @@ The following elements are needed to be ready before the test execution phase be
     
 **<h2>1.6 Test Execution</h2>**
 
-  - Test cases are executed on the created test Cycle summary: [cycle summary.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/12818577/cycle.summary.pdf)
+  - Test cases are executed on the created test Cycle summary: [ZFJ - Html Report for Executions.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188138/ZFJ.-.Html.Report.for.Executions.pdf)
+
 
   - Bugs have been created based on the failed tests. The complete bug reports can be found here: [bug report.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188086/bug.report.pdf)
 
-      - [Sign up] Sign up succesfully with invalid email
-      - [Sign up] Sign up succesfully with invalid password
-      - [Send message through the contact link] Send a message by leaving all the fields empty
-      - [Send message through the contact link] Send a message with more than 1000 alphanumeric characters
-      - [Send message through the contact link] Send a message with special characters
-      - [Send message through the contact link] Message sent by a non-user
+      - [Sign up] Sign up succesfully with invalid email - there was an account created with an invalid password, that did not contain just alphanumeric characters: [[#CM-29] [Sign up] Sign up succesfully with invalid email.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188179/CM-29.Sign.up.Sign.up.succesfully.with.invalid.email.pdf)
 
+      - [Sign up] Sign up succesfully with a too long password - an account was created with a password longer than 16 characters: [[#CM-39] [Sign up] Sign up succesfully with a too long password.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188190/CM-39.Sign.up.Sign.up.succesfully.with.a.too.long.password.pdf)
+
+      - [Sign up] Sign up succesfully with a too long password, with a too short one - an account was created with a password longer than 8 characters: [[#CM-30] [Sign up] Sign up succesfully with invalid password, a too short one.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188198/CM-30.Sign.up.Sign.up.succesfully.with.invalid.password.a.too.short.one.pdf)
+
+      - [Send message through the contact link] Send a message by leaving all the fields empty - the message was succesfully sent even though all the fields were left empty: [[#CM-33] [Send message through the contact link] Send a message by leaving all the fields empty.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188214/CM-33.Send.message.through.the.contact.link.Send.a.message.by.leaving.all.the.fields.empty.pdf)
+
+      - [Send message through the contact link] Send a message with more than 1000 alphanumeric characters- the message is successfully sent, even though it contained more that 1000 alphanumeric characters: [[#CM-34] [Send message through the contact link] Send a message with more than 1000 alphanumeric characters.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188227/CM-34.Send.message.through.the.contact.link.Send.a.message.with.more.than.1000.alphanumeric.characters.pdf)
+
+      - [Send message through the contact link] Send a message with special characters - the message is successfully sent, even though it contained special characters: [[#CM-35] [Send message through the contact link] Send a message with special characters.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188238/CM-35.Send.message.through.the.contact.link.Send.a.message.with.special.characters.pdf)
+
+      - [Send message through the contact link] Message sent by a non-user -  the message is successfully sent, even though the user was not registered: [[#CM-37] [Send message through the contact link] Message sent by a non-user.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188255/CM-37.Send.message.through.the.contact.link.Message.sent.by.a.non-user.pdf)
+
+      - [Send message through the contact link] Message sent with an invalid email - the message is successfully sent, even though the email was invalid: [[#CM-36] [Send message through the contact link] Send a message with an invalid email.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188268/CM-36.Send.message.through.the.contact.link.Send.a.message.with.an.invalid.email.pdf)
+
+        
 **<h2>1.7 Test Completion</h2>**
 
-  - Exit criteria was evaluated and not passed
-  - The traceability matrix was generated and can be found here: [traceability matrix.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/12818712/traceability.matrix.pdf)
-
-  - Test execution chart was generated, the final report shows the presence of 7 bugs from the total of 13 test that were executed, this means that 53,85% from the total number of test failed so the exit criteria is not passed and the bugs need to be fixed and then retested
-  - The test execution report can be found here: ![test execution by cycle](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/assets/133394952/b82ccf31-7fa8-489a-b485-16d92f7f721b)
+  - Exit criteria was evaluated and not passed because we have more that 50% of the written test failed.
+  - The traceability matrix was generated and can be found here: ![tracebility matrix](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/assets/133394952/e3770092-fa32-470c-b06a-b188956f1985)
+  - Test execution chart was generated, the final report shows the presence of 8 bugs from the total of 14 test that were executed, this means that 57,14% from the total number of test failed so the exit criteria is not passed and the bugs need to be fixed and then retested
+  - The test execution report can be found here: ![test execution](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/assets/133394952/f6b1c931-b687-4503-bb08-a2bf9530d2f9)
+  - All the test were written with regards of the business specifications
+  - For the Sign up section there were 8 test written and 3 have failed thus creating 3 bugs. The bugs have a medium priority and that means they do effect the final user because even though an account was created, it was done by using invalid credentials and there problems might occur later on when using the web-site (on log in, on adding to chart, on completing an order, sending a message). They do not affect the applications performance or ability to run
+  - For the Contact section there were 6 test written and 5 have failed thus creating 5 bugs. 4 bugs have a low priority, 1 has a medium priority and that means the have a relatively low effect on the user. The performance of the application it is not affected in any way, the only problem might be that the messages can be sent by anyone, even though they are not users, and that can mean there might be a lot of messages coming in.
+  - For the next update to the site, I would recommend that the bugs that were found in this cycle are fixed
 
 
  
