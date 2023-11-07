@@ -1,4 +1,4 @@
-# Proiect-Practic-Testare-Manuala
+[report for execution.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13278131/report.for.execution.csv)[report for execution.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13278100/report.for.execution.csv)[report for execution.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13278060/report.for.execution.csv)[ZFJ-Cycles-11-07-2023.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13277985/ZFJ-Cycles-11-07-2023.csv)# Proiect-Practic-Testare-Manuala
 The scope of the final project for ITF Manual Testing Course is to use all gained knowledge throught the course and apply them in pratice, using a live application
 
 Application under test: [Demoblaze](https://www.demoblaze.com/index.html#)
@@ -58,7 +58,6 @@ Carmen Mandra will test: Sign up, Contact
   - access to the testing tools is granted
   - the testing team has undergone the proper training
   - the business specifications have been acknowledged
-  - we have a testing environment up and running
 
 
 **1.1.3 Exit criteria defined**
@@ -113,8 +112,6 @@ The entry criteria defined in the Test Planning phase have been achieved and the
 It will be done by generating periodic reports that reflect the current status of the test.
 
 The report generated at the end of the sprint:
-
-[Test execution report](https://itfclasses.atlassian.net/projects/CM?selectedItem=com.thed.zephyr.je__test-metric-project-level)
 
 ![test execution report](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/assets/133394952/89dc7672-430d-44b5-b04a-dafe8ae5ae36)
 
@@ -178,13 +175,15 @@ The test cases with steps can be viewed here: [Zephyr Test Steps (Jira).pdf](htt
 The following elements are needed to be ready before the test execution phase begins:
 
   - The website is up and running
-  - All the necesary username, passwords and contact messages examples are ready
+  - All the necessary test data related to username, passwords and contact messages inputs are ready
   - Acces granted to Jira an Zephyr
+  - Test environment is up and running 
     
 **<h2>1.6 Test Execution</h2>**
 
-  - Test cases are executed on the created test Cycle summary: [ZFJ - Html Report for Executions.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188138/ZFJ.-.Html.Report.for.Executions.pdf)
-
+  - Test cases are executed on the created test Cycle summary:
+    
+![report for execution1](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/assets/133394952/ce81ef2c-c349-46cb-937e-4630f9029b34)
 
   - Bugs have been created based on the failed tests. The complete bug reports can be found here: [bug report.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188086/bug.report.pdf)
 
