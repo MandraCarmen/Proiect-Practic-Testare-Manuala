@@ -1,4 +1,5 @@
-[report for execution.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13278131/report.for.execution.csv)[report for execution.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13278100/report.for.execution.csv)[report for execution.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13278060/report.for.execution.csv)[ZFJ-Cycles-11-07-2023.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13277985/ZFJ-Cycles-11-07-2023.csv)# Proiect-Practic-Testare-Manuala
+Proiect-Practic-Testare-Manuala
+
 The scope of the final project for ITF Manual Testing Course is to use all gained knowledge throught the course and apply them in pratice, using a live application
 
 Application under test: [Demoblaze](https://www.demoblaze.com/index.html#)
@@ -181,9 +182,8 @@ The following elements are needed to be ready before the test execution phase be
     
 **<h2>1.6 Test Execution</h2>**
 
-  - Test cases are executed on the created test Cycle summary:
-    
-![report for execution1](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/assets/133394952/ce81ef2c-c349-46cb-937e-4630f9029b34)
+  - Test cases are executed on the created test Cycle summary: [report for execution.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13278131/report.for.execution.csv)[report for execution.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13278100/report.for.execution.csv)[report for execution.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13278060/report.for.execution.csv)[ZFJ-Cycles-11-07-2023.csv](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13277985/ZFJ-Cycles-11-07-2023.csv)# 
+
 
   - Bugs have been created based on the failed tests. The complete bug reports can be found here: [bug report.pdf](https://github.com/MandraCarmen/Proiect-Practic-Testare-Manuala/files/13188086/bug.report.pdf)
 
